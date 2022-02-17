@@ -17,9 +17,9 @@ export class CourseCardComponent implements OnInit {
   @Output('courseSelected')
   courseSelected = new EventEmitter<Course>();
 
-constructor() { 
+  constructor() {
 
-}
+  }
 
   ngOnInit() {
   }
@@ -28,16 +28,16 @@ constructor() {
     return this.course && this.course.iconUrl;
   }
 
-  onCourseViewed () {
+  onCourseViewed() {
     console.log("card component - button clicked ...");
-  this.courseSelected.emit(this.course);
+    this.courseSelected.emit(this.course);
   }
 
   cardClasses() {
-    return {
-      'beginner': this.course.category == 'BEGINNER', 
-      'course-card': true
-    };
+    if (this.course.category == 'BEGINNER') {
+      return 'beginner';
+    }
+
   }
 
 
