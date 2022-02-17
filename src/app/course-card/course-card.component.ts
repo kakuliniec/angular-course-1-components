@@ -33,4 +33,12 @@ constructor() {
   this.courseSelected.emit(this.course);
   }
 
+  cardClasses() {
+    return {
+      'beginner': this.course.category == 'BEGINNER', 
+      'course-card': true
+    };
+  }
+
+
 }
