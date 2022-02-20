@@ -15,6 +15,8 @@ export class AppComponent {
 
   price = 9.9944363643;
 
+  rate = 0.67;
+
   startDate = new Date(2022, 0, 1);
 
   onCourseSelected(course: Course) {
