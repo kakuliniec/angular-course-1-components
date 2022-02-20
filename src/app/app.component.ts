@@ -13,7 +13,7 @@ export class AppComponent {
 
   title = COURSES[0].description;
 
-  price = 9.99;
+  price = 9.9944363643;
 
   startDate = new Date(2022, 0, 1);
 
