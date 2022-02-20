@@ -5,6 +5,15 @@
 
 </div>
 
+<div class="demo">
+<div>Start Date: {{startDate | date: 'MMM/dd/yyyy' }}</div>
+
+<div> {{title}} </div>
+
+</div>
+
+
+
 <div class="courses">
 
     <course-card *ngFor="let course of courses;index as i;" 

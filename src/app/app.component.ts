@@ -11,11 +11,9 @@ export class AppComponent {
 
   courses = COURSES;
 
-  coreCourse = COURSES[0];
+  title = COURSES[0].description;
 
-  rxjsCourse = COURSES[1];
-
-  ngrxCourse = COURSES[2];
+  startDate = new Date(2022, 0, 1);
 
   onCourseSelected(course: Course) {
 
