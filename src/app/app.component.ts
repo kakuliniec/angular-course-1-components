@@ -17,6 +17,8 @@ export class AppComponent {
 
   rate = 0.67;
 
+  course = COURSES[0];
+
   startDate = new Date(2022, 0, 1);
 
   onCourseSelected(course: Course) {

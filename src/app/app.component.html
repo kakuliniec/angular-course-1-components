@@ -5,8 +5,10 @@
 
 </div>
 
-{{ courses | json }}
+<div *ngFor="let pair of course | keyvalue">
+    {{pair.key + ': ' + pair.value}}
 
+</div> 
 
 <div class="courses">
 
