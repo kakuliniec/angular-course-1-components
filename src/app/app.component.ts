@@ -13,6 +13,8 @@ export class AppComponent {
 
   title = COURSES[0].description;
 
+  price = 9.99;
+
   startDate = new Date(2022, 0, 1);
 
   onCourseSelected(course: Course) {
